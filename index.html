@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mostrando IP Externo</title>
+	<title>Data e Hora</title>
 </head>
 <body>
-	<h1>Seu Endereço de IP Externo é:</h1>
 	<p>
 		<?php
-			echo $_SERVER['REMOTE_ADDR'];
+		    echo "A data e hora atual é: " . date("d/m/Y H:i:s");
+		    echo "<br>";
+		    echo "O seu endereço IP externo é: " . $_SERVER['REMOTE_ADDR'];
 		?>
 	</p>
 </body>
